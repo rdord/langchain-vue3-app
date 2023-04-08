@@ -17,6 +17,11 @@ const router = createRouter({
       path: '/few-shot-prompt-template',
       name: 'FewShotPromptTemplate',
       component: () => import('../views/FewShotPromptTemplate.vue')
+    },
+    {
+      path: '/agent',
+      name: 'Agent',
+      component: () => import('../views/Agent.vue')
     }
   ]
 });
