@@ -10,8 +10,9 @@ onMounted(() => store.setupOpenAI());
 <template>
   <header>
     <nav>
-      <RouterLink to="/">Basic prompt</RouterLink>
-      <RouterLink to="/prompt-template">PromptTemplate</RouterLink>
+      <RouterLink :to="{ name: 'BasicPrompt' }">Basic prompt</RouterLink>
+      <RouterLink :to="{ name: 'PromptTemplate' }">PromptTemplate</RouterLink>
+      <RouterLink :to="{ name: 'FewShotPromptTemplate' }">FewShotPromptTemplate</RouterLink>
     </nav>
   </header>
 
